@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        let n=prompt("Enter number:");
+        let digit=0;
+        let num=n;
+        while(num>0){
+          num = Math.floor(num / 10);
+           digit++; 
+        }
+        let temp=n;
+        let armstrong=0;
+        while(n>0){
+           let r=n%10;
+           armstrong+=r**digit;
+          n=Math.floor(n/ 10);
+
+        }
+        if(temp==armstrong){
+           console.log("Yes"); 
+        }else{
+          console.log("No");  
+        }
+
+     </script>
+</body>
+</html>
