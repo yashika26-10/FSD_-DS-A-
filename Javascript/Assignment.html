@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Our products</h2>
+     
+    </div> 
+
+    <script>
+         const product={
+        Tea:450,
+         coffee:600,
+         sugar:760,
+         milk:500
+     } 
+    const product_name=prompt("Enter your product:");
+    const Quantity=prompt("Enter quantity:");
+    document.write("Total Amount is:"+(product[product_name])*Quantity+"<br>"); 
+      
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Products</h2>
+
+        <div class="product">
+            <span>Tea</span>
+            <span>₹450</span>
+        </div>
+
+        <div class="product">
+            <span>Coffee</span>
+            <span>₹600</span>
+        </div> 
+
+        <div class="product">
+            <span>Sugar</span>
+            <span>₹760</span>
+        </div>
+
+        <div class="product">
+            <span>Milk</span>
+            <span>₹500</span>
+        </div>
+        <img>
+    </div>
+
+    <script>
+
+        const product = {
+            Tea: 450,
+            coffee: 600,
+            sugar: 760,
+            milk: 500
+        };
+ 
+        const product_name = prompt("Enter your product:");
+        const Quantity = prompt("Enter quantity:");
+
+        document.write(
+            "Total Amount is: " +
+            (product[product_name]) * Quantity +
+            "<br>"  
+        );
+
+    </script>
+
+</body>
+</html>
