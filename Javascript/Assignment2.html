@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        const Data=[{
+       name:"XYZ",
+       course:"B.tech",
+       Roll_no:210,
+       fee:120000
+     },{
+        name:"ABC",
+       course:"M.TECH",
+       Roll_no:210,
+       fee:1210000
+        
+     },{
+         name:"DEF",
+         course:"10TH",
+         Roll_no:124,
+         fee:12000 
+     },{
+        name:"PQR",
+       course:"M.TECH",
+       Roll_no:211,
+       fee:1210000
+     },{
+        name:"TRP",
+       course:"B.tech",
+       Roll_no:200,
+       fee:120000
+     }]
+    //   const Info=prompt("Give student name with branch B.tech");
+       
+       const {name,branch,fee}=Data;
+    const even=Data.filter((name)=>(name.course=="B.tech"));
+    console.log(even);
+    const rollno=even.map((rollno)=>(even.Roll_no));
+     console.log(rollno);
+
+     </script>
+</body>
+</html>
